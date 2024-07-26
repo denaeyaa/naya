@@ -1,0 +1,547 @@
+#main-content {
+    padding-top: 100px; 
+  }
+  
+  .btn-primary {
+    transition: transform 0.3s ease-in-out;
+    background-color: #FB5607 !important;
+    border: none !important;
+    font-size: small;
+    width: 233px;
+    height: 39px;
+    padding: 10px 55px 10px 55px;
+    border-radius: 10px;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+  }
+  .btn-primary:hover {
+    transform: scale(1.1);
+  }
+  
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    scroll-padding-top: 100px;
+}
+
+section{
+    margin-top: 70px;
+}
+
+.navbar {
+    padding-right: 70px;
+    background: #000000 !important;
+    justify-content: space-between;
+    display: flex;  
+    align-items: center; 
+}
+
+.navbar-links {
+    display: block; 
+    margin-right: 10px;
+}
+
+.nav-text {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding-right: 40px;
+    text-decoration: none; 
+    font-size: small;
+}
+
+.nav-text:hover {
+    color: #FB5607; 
+}
+.navbar-toggler {
+    border: none;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar {
+      padding-right: 15px;
+    }
+    .navbar-brand {
+      margin-left: 15px;
+    }
+    .nav-text {
+      padding-right: 15px;
+    }
+  }
+
+hr{
+    border: 2px solid white !important;
+}
+
+.poster{
+    flex: 0 0 250px;
+    height: 500px;
+}
+
+.card{
+    background-color: #000000;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
+.card-sec3{
+    background-color: #FFFFFF21;
+    padding: 20px;
+    border: none;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    height: 320px;
+    width: 250px;
+    /*box-shadow: 0 0 15px rgba(109, 16, 168, 0.945);*/}
+
+.card-sec3:hover {
+    transform: scale(1.1);
+}
+
+.card-section {
+    margin-top: -130px;
+    margin-bottom: 300px;
+  }
+  
+/*@media (max-width: 768px) {
+    .card-section {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+
+    .card-sec3 {
+      margin-bottom: 20px;
+    }
+  
+    .card-title {
+      font-size: large;
+    }
+  
+    .card-text {
+      font-size: smaller;
+    }
+  }*/ 
+  
+
+/*tim 2*/
+header {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    size: 40px;
+    line-height: 52px;
+    margin-right: 110px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-left: 260px;
+}
+.carousel img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel img {
+        width: 116px;
+        height: 116px;
+        border-radius: 50%;
+        border: 6px solid #FB5607;
+        margin-top:-5px;
+        object-fit: cover;   
+        align-items: center; 
+}
+
+.white-text {
+    color: #fff;
+}
+
+.violet-text {
+    color: #8338EC;
+}
+
+.captext {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    max-height: 200px;
+}
+
+.name {
+    color: #FB5607;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 21.6px;
+}
+
+.p {
+    margin-top: 25px;
+    line-height: 19.2px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+h3 {
+    color: #FB5607;
+    margin-top: 30px;
+    margin-bottom: -15px;
+}
+
+.ket {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.4px;
+}
+
+.slides {
+    position: relative;
+}
+
+.slide {
+    display: none; 
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .slides #s1,
+#slide2:checked ~ .slides #s2,
+#slide3:checked ~ .slides #s3,
+#slide4:checked ~ .slides #s4,
+#slide5:checked ~ .slides #s5 {
+    display: block;
+}
+
+.carousel-buttons {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 90px;
+}
+
+.carousel-button {
+    background-color: #626262;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+   display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+    background-color: #FB5607;
+}
+
+/* Mengubah warna tombol aktif */
+#slide1:checked ~ .carousel-buttons label[for="slide1"],
+#slide2:checked ~ .carousel-buttons label[for="slide2"],
+#slide3:checked ~ .carousel-buttons label[for="slide3"],
+#slide4:checked ~ .carousel-buttons label[for="slide4"],
+#slide5:checked ~ .carousel-buttons label[for="slide5"] {
+    background-color: #FB5607;
+}
+
+/* Media Queries untuk Responsivitas */
+
+/* Untuk tablet dan layar yang lebih kecil */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.2em; /* Menyesuaikan ukuran font untuk header */
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .carousel {
+        margin-left: 0; /* Menghilangkan margin kiri pada carousel */
+        padding: 0 10px; /* Menambahkan padding horizontal */
+    }
+
+    .carousel img {
+        width: 116px; /* Mengatur lebar gambar agar mengikuti lebar elemen carousel */
+        height: 116px; /* Menjaga rasio aspek gambar */
+    }
+
+    .name {
+        font-size: 1em; /* Menyesuaikan ukuran font untuk nama */
+    }
+
+    .p {
+        font-size: 0.9em; /* Menyesuaikan ukuran font untuk teks deskripsi */
+    }
+
+    .ket {
+        font-size: 0.8em; /* Menyesuaikan ukuran font untuk teks keterangan */
+    }
+
+    .carousel-buttons {
+        margin-top: 20px;
+    }
+
+    .carousel-button {
+        width: 10px; /* Mengurangi ukuran tombol untuk layar lebih kecil */
+        height: 10px;
+    }
+}
+
+/* Untuk ponsel dan layar yang lebih kecil */
+@media (max-width: 480px) {
+    header {
+        font-size: 1em; /* Menyesuaikan ukuran font untuk header */
+    }
+
+    .carousel {
+        margin-left: 0; /* Menghilangkan margin kiri pada carousel */
+        padding: 0 5px; /* Menambahkan padding horizontal lebih kecil */
+    }
+
+    .carousel img {
+        width: 116px; /* Mengatur lebar gambar agar mengikuti lebar elemen carousel */
+        height: 116px; /* Menjaga rasio aspek gambar */
+    }
+
+    .name {
+        font-size: 0.9em; /* Menyesuaikan ukuran font untuk nama */
+    }
+
+    .p {
+        font-size: 0.8em; /* Menyesuaikan ukuran font untuk teks deskripsi */
+    }
+
+    .ket {
+        font-size: 0.7em; /* Menyesuaikan ukuran font untuk teks keterangan */
+    }
+
+    .carousel-buttons {
+        margin-top: 30px;
+    }
+
+    .carousel-button {
+        width: 8px; /* Mengurangi ukuran tombol untuk ponsel */
+        height: 8px;
+    }
+}
+
+
+/* footer */
+footer {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 6000000000000000000px !important;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 2.87%, rgba(131, 56, 236, 0.54) 97.05%);
+    color: white;
+    flex-shrink: 0;
+    margin-top: 300px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+}
+
+.footer-logo img {
+    height: 64px;
+    margin-left: 70px;
+    margin-bottom: 5px;
+}
+
+.footer-copyright {
+    text-align: center;
+    flex: 1;
+    font-size: 16px;
+    margin-bottom: -20px;
+    font-weight: lighter;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+.footer-social a {
+    margin-right: 70px;
+    margin-left: -40px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    text-decoration: none;
+}
+
+.footer-social i {
+    font-size: 35px;
+    color: #FB5607;
+}
+
+#about{
+    scroll-margin-top: 100px;
+}
+
+#ecourse {
+    scroll-margin-top: 100px;
+}
+
+#benefit{
+    scroll-margin-top: 100px;
+}
+
+#blog{
+    scroll-margin-top: 100px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.labels{
+  color: black;
+  margin: 40px;
+  font-size: 12px;
+}
+.card-title2 {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 17px;
+
+}
+.card-content {
+    margin: 40px;
+    font-size: 1em;
+    color: #585858;
+}
+.continue {
+  margin: 40px;
+}
+.continue a {
+    text-decoration: none;
+    color: #000000;
+  }
+.continue a:hover{
+    color: #FB5607;
+}
+.card-2 {
+    background-color: #D9D9D9;
+    border: none;
+    overflow: hidden;
+    width: 30%;
+    border-radius: 0px;
+    color: black;
+}
+
+.card-2 img {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+.background-image {
+    background-image: url('4.png');
+    background-size: cover;
+    height: 273px;
+    margin-bottom: 0;
+    z-index: 9999;
+}
+.bton{
+  text-align: center;
+}
+.btn-primary {
+  transition: transform 0.3s ease-in-out;
+  background-color: #FB5607 !important;
+  border: none !important;
+  font-size: small;
+  width: 233px;
+  height: 39px;
+  border-radius: 10px;
+  gap: 10px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-right: 90px;
+}
+.btn-primary:hover {
+  transform: scale(1.1);}
+
+  .container1{
+    max-width: 200000px;
+    height: 200px;
+}
+
+.isi{
+    font-size: small;
+    color: #585858;
+    margin: 10px;
+    margin-top: 30px;
+}
+.labels {
+    color: black;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.link-sc4{
+    font-size: small;
+    text-decoration: none;
+}
+.link-sc4:hover{
+    color: #FB5607 !important;
+}
+.title{
+    display: -webkit-box;
+    margin-left: 10px;
+    margin-top: 20px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: calc(3 * 1.2em);
+    transition: max-width 0.5s ease;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title:hover {
+    max-height: none;
+    z-index: 1;
+    background-color: none;
+    color: #FB5607;
+}
+.bton{
+  text-align: center;
+}
+.btn-primary {
+  transition: transform 0.3s ease-in-out;
+  background-color: #FB5607 !important;
+  border: none !important;
+  font-size: small;
+  width: 233px;
+  height: 39px;
+  border-radius: 10px;
+  gap: 10px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.btn-primary:hover {
+  transform: scale(1.1);}
