@@ -1,0 +1,41 @@
+
+const buttons = document.querySelectorAll('.carousel-button');
+const slides = document.querySelectorAll('.slide');
+
+let currentIndex = 0;
+const totalSlides = buttons.length;
+
+function activateSlide(index) {
+    document.querySelectorAll('input[name="carousel"]').forEach(radio => {
+        radio.checked = false;
+    });
+    document.getElementById(`slide${index + 1}`).checked = true;
+
+    buttons.forEach(button => {
+        button.classList.remove('hovered');
+    });
+    buttons[index].classList.add('hovered');
+}
+
+function autoScroll() {
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        activateSlide(currentIndex);
+    }, 2000);
+}
+
+buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        activateSlide(index);
+        currentIndex = index;
+    });
+});
+
+slides.forEach((slide, index) => {
+    slide.addEventListener('mouseover', () => {
+        activateSlide(index);
+        currentIndex = index;
+    });
+});
+
+autoScroll();
